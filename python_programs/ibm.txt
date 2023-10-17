@@ -1,0 +1,6 @@
+stu1 phy 65
+stu2 phy 69
+stu3 phy 72
+stu1 phy 75
+stu2 phy 79
+stu3 phy 82
