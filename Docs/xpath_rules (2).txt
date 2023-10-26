@@ -1,0 +1,113 @@
+xpath rules: 
+
+http://automationpractice.com
+
+
+
+
+
+
+
+
+
+
+
+1. if element has an ID or name , use complete id , name or partial to make element unique
+
+
+
+
+
+//input[@id='search_query_top1234']
+//input[starts-with(@id,'search')]
+
+2. if no ID, name found . then use any other attribute to make element unique. full or partial
+
+//a[@title='Dresses']
+//input[starts-with(@title,'Dresses')]
+
+3. if not able to find element unique by one attribute , use more then one to make element unique
+
+//a[@title='Dresses' and @class='sf-with-ul']
+
+4. if not able to identify element based on above 3 rule , move to parent element , identify parent element unique and navigate to child element or use sibling concept
+
+
+
+//ul[@class='sf-menu clearfix menu-content sf-js-enabled sf-arrows']/li[2]/a
+//div[@id='block_top_menu']/ul/li[2]/a
+
+//a[@title='Women']/parent::li/following-sibling::li/a
+
+
+5. sibling
+
+//a[contains(@href,'category#color-black')]/parent::label/parent::li/following-sibling::li[2]/label/a
+
+"//div[@class='canvas- graph']//a[@href='/accounting.html'][i[@class='icon-usd']]/following-sibling::h4"
+preceding-sibling
+
+//a[contains(@href,'category#color-black')]/ancestor::li/following-sibling::li[2]//a
+
+6. use contains to identify element in worst cases
+
+//a[contains(text(),'T-shirts')]
+
+//a[contains(.,'T-shirts')]
+
+7. if no above rule working out , get the path starting from HTML , keep on cutting and verifying . till the place u get unique, use thaat using double '/' . if the last one with index more then 3,4 then replace that with appropriate attribute to identify the element by any above rule.
+
+
+	
+
+
+css locator
+
+
+
+with id
+#id-no
+#block_top_menu
+
+Id no with tag name
+tag#id
+div#block_top_menu
+
+with class name
+.classname
+.clearfix
+
+with multiple class
+.clearfix.col-sm-4
+
+class with tag and id
+div#search_block_top.clearfix.col-sm-4
+
+select child from parent
+parent<space>child
+#header_logo a
+
+tag name with attribute
+a[href='http://automationpractice.com/']
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
