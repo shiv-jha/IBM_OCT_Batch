@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="4" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-10-30T10:49:41 IST" name="Suite" finished-at="2023-10-30T10:49:41 IST" duration-ms="256">
+    <groups>
+      <group name="regression">
+        <method signature="SampleTest1.test2()[pri:1, instance:module1.SampleTest1@70e9c95d]" name="test2" class="module1.SampleTest1"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="SampleTest1.searchItem(java.lang.String)[pri:2, instance:module1.SampleTest1@70e9c95d]" name="searchItem" class="module1.SampleTest1"/>
+        <method signature="SampleTest1.test2()[pri:1, instance:module1.SampleTest1@70e9c95d]" name="test2" class="module1.SampleTest1"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2023-10-30T10:49:41 IST" name="common module" finished-at="2023-10-30T10:49:41 IST" duration-ms="11">
+    </test> <!-- common module -->
+    <test started-at="2023-10-30T10:49:41 IST" name="module1" finished-at="2023-10-30T10:49:41 IST" duration-ms="189">
+      <class name="module1.SampleTest1">
+        <test-method signature="test2()[pri:1, instance:module1.SampleTest1@70e9c95d]" started-at="2023-10-30T10:49:41 IST" name="test2" finished-at="2023-10-30T10:49:41 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method signature="searchItem(java.lang.String)[pri:2, instance:module1.SampleTest1@70e9c95d]" started-at="2023-10-30T10:49:41 IST" name="searchItem" finished-at="2023-10-30T10:49:41 IST" duration-ms="146" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[iPhone]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchItem -->
+      </class> <!-- module1.SampleTest1 -->
+    </test> <!-- module1 -->
+    <test started-at="2023-10-30T10:49:41 IST" name="module2" finished-at="2023-10-30T10:49:41 IST" duration-ms="4">
+      <class name="common.BaseClass">
+        <test-method is-config="true" signature="beforeSuite(java.lang.String,java.lang.String)[pri:0, instance:common.BaseClass@66d3eec0]" started-at="2023-10-30T10:49:38 IST" name="beforeSuite" finished-at="2023-10-30T10:49:41 IST" duration-ms="3055" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://tutorialsninja.com/demo]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:common.BaseClass@66d3eec0]" started-at="2023-10-30T10:49:41 IST" name="afterSuite" finished-at="2023-10-30T10:49:41 IST" duration-ms="259" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- common.BaseClass -->
+      <class name="module2.SampleTest3">
+        <test-method signature="test4()[pri:0, instance:module2.SampleTest3@4686afc2]" started-at="2023-10-30T10:49:41 IST" name="test4" finished-at="2023-10-30T10:49:41 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4 -->
+      </class> <!-- module2.SampleTest3 -->
+    </test> <!-- module2 -->
+  </suite> <!-- Suite -->
+</testng-results>
